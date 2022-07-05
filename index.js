@@ -11,4 +11,8 @@ app.get('/fakes', (req, res) => {
     res.json(fakes)
 })
 
+app.get('/jerwyn', (req, res) => {
+    res.send(PORT)
+})
+
 app.listen(PORT, () => console.log(`Server is running: ${PORT}`))
